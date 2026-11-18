@@ -18,3 +18,8 @@ def get_tasks():
         {"id": 2, "task": "Learn Docker"}
     ]
 
+
+@app.get("/version")
+def get_version():
+    return {"version": "1.0.0"}
+
